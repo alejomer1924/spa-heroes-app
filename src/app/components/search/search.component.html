@@ -1,0 +1,13 @@
+<div *ngIf = 'encontro === true'>
+    <h1>Resultado de la búsqueda </h1>
+</div>
+
+<div *ngIf = 'encontro === false'>
+    <h1 class="no-encontrado">No se ha encontrado el héroe</h1>
+</div>
+
+<hr>
+
+<div class="card-columns">
+ <app-heroe-card [heroe] = 'heroe' [index] = 'heroe.idx' *ngFor="let heroe of hArra"></app-heroe-card>
+</div>
